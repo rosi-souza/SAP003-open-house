@@ -24,6 +24,6 @@ function loginFacebook() {
           alert('Falha na autenticação')
         });
     });
-};
+}
 
 export default loginFacebook;

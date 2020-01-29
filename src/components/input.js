@@ -15,7 +15,7 @@ const Select = (func) => {
 </div>
   `;
   return template;
-}
+};
 
 window.select = {
   handleClick: (event, callBack) => {
