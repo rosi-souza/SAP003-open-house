@@ -5,7 +5,7 @@ const firebaseConfig = {
   projectId: 'lab-open-house-6277',
   storageBucket: 'lab-open-house-6277.appspot.com',
   messagingSenderId: '691152742434',
-  appId: '1:691152742434:web:d3c4ceaa60f1200975027b',
+  appId: '1:691152742434:web:56a5613075185b4a75027b'
 };
 
 firebase.initializeApp(firebaseConfig);

@@ -1,10 +1,10 @@
-import funcs from './pages/home.js';
-import getUser from './pages/profile.js';
-import Info from './pages/info.js';
-import getMoreEvent from './pages/moreinfoevent.js';
-import loginGoogle from './pages/google.js';
-import getFavorites from './pages/favorites.js';
-import registerPage from './pages/register.js';
+import funcs from './home.js';
+import getUser from './profile.js';
+import Info from './info.js';
+import getMoreEvent from './moreinfoevent.js';
+import loginGoogle from '../components/google.js';
+import getFavorites from './favorites.js';
+import registerPage from './register.js';
 
 const main = document.querySelector('main');
 
