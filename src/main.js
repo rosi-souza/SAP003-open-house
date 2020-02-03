@@ -3,7 +3,6 @@ import getUser from './pages/profile.js';
 import Info from './pages/info.js';
 import getMoreEvent from './pages/moreinfoevent.js';
 import loginGoogle from './pages/google.js';
-import loginFacebook from './pages/facebook.js';
 import getFavorites from './pages/favorites.js';
 import registerPage from './pages/register.js';
 
@@ -38,17 +37,17 @@ window.addEventListener('load', init);
 document.querySelectorAll('.home').forEach((btn) => {
   btn.addEventListener('click', () => {
     window.location.hash = '';
-    const selected = document.querySelectorAll('.selected')
-    selected.forEach(btn => btn.classList.remove('selected'))
+    const selected = document.querySelectorAll('.selected');
+    selected.forEach(btn => btn.classList.remove('selected'));
     btn.classList.add('selected');
   });
 });
 
 document.querySelectorAll('.info').forEach((btn) => {
-  btn.addEventListener('click', (e) => {
+  btn.addEventListener('click', () => {
     window.location.hash = 'info';
-    const selected = document.querySelectorAll('.selected')
-    selected.forEach(btn => btn.classList.remove('selected'))
+    const selected = document.querySelectorAll('.selected');
+    selected.forEach(btn => btn.classList.remove('selected'));
     btn.classList.add('selected');
   });
 });
@@ -79,8 +78,8 @@ document.querySelectorAll('.login').forEach((element) => {
       $('#myModal').modal('show');  
     } else {
       window.location.hash = event.currentTarget.id;
-      const selected = document.querySelectorAll('.selected')
-      selected.forEach(btn => btn.classList.remove('selected'))
+      const selected = document.querySelectorAll('.selected');
+      selected.forEach(btn => btn.classList.remove('selected'));
       element.classList.add('selected');
     }
   });
@@ -93,12 +92,9 @@ const register = () => {
 const googleBtn = document.querySelector('.google-login');
 googleBtn.addEventListener('click', loginGoogle);
 
-const facebookBtn = document.querySelector('.facebook-login');
-facebookBtn.addEventListener('click', loginFacebook);
-
 const loginBtn = document.querySelector('.btn-submit-login');
 loginBtn.addEventListener('click', signIn);
 
 document.querySelectorAll('.register').forEach((element) => {
   element.addEventListener('click', register);
-})
+});

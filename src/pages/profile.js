@@ -2,15 +2,13 @@ const profile = (props) => {
   const template = `
     <div class="all-content">
       <div class="content-one">
-      <img  class="img-profile" src="./testeprofile.png" />
       <div class="name">
         <span class="name-user">${props.nome}</span>
       </div>
       </div>
         <div class="border"></div>
         <div class="content logout">
-          <i class="icon fas fa-sign-out-alt"></i>
-          <span class="options">Logout</span>
+          <button class="options">Logout</button>
         </div>
         <div class="border"></div>
       </div>

@@ -23,19 +23,19 @@ const getMoreEvent = (id) => {
 
   firebase.firestore().collection('events').doc(noHashId).get()
     .then((doc) => {
-      main.innerHTML = moreInfoTemplate(doc.data()); 
+      main.innerHTML = moreInfoTemplate(doc.data());
       getMap(doc.data().location);
     });
 };
 
 const getMap = (searchText) => {
-  let platform = new H.service.Platform({
+  const platform = new H.service.Platform({
     apikey: 'O9FC31KMgVFrvFFFc5QIMm2GWYnXeCpHXjRox3A0ENs',
   });
 
-  let maptypes = platform.createDefaultLayers();
+  const maptypes = platform.createDefaultLayers();
 
-  let map = new H.Map(
+  const map = new H.Map(
     document.querySelector('.map-container'),
     maptypes.vector.normal.map,
     {
